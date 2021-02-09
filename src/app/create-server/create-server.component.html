@@ -12,8 +12,8 @@
     </ng-template>
 
     <ul>
-        <li><p [ngStyle]="{backgroundColor: getColor1()}">Server 1 is {{serverStatus1}}</p></li>
-        <li><p [ngStyle]="{backgroundColor: getColor2()}">Server 2 is {{serverStatus2}}</p></li>
+        <li><p [ngStyle]="{backgroundColor: getColor1()}" [ngClass]="{online: serverStatus1 === 'online'}">Server 1 is {{serverStatus1}}</p></li>
+        <li><p [ngStyle]="{backgroundColor: getColor2()}" [ngClass]="{online: serverStatus2 === 'online'}">Server 2 is {{serverStatus2}}</p></li>
     </ul>
 
     <!-- <p>{{ serverName }}</p> -->

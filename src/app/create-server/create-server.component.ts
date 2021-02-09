@@ -35,10 +35,11 @@ onCreateServer(){
 onUpdateServerName(event: any){
   this.serverName = (<HTMLInputElement>event.target).value;
 }
+
 getColor1(){
-  return this.serverStatus1 === 'online' ? 'green' : 'red'; 
+  return this.serverStatus1 === 'online' ? 'rgba(172, 255, 47, 0.63)' : 'mistyrose'; 
 }
 getColor2(){
-  return this.serverStatus2  === 'online' ? 'green' : 'red'; 
+  return this.serverStatus2  === 'online' ? 'rgba(172, 255, 47, 0.63)' : 'mistyrose'; 
 }
 }
