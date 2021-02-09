@@ -1,0 +1,6 @@
+<ul>
+    <input type="text" class="form-control" placeholder="Insert yourn name" [(ngModel)]='username'>
+    <br>
+    <button class="btn btn-primary" [disabled]="username === ''" (click)='onResetUsername()'>Reset</button>
+    {{allowUsername}}
+</ul>
