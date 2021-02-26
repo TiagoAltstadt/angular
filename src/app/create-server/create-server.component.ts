@@ -10,6 +10,7 @@ export class CreateServerComponent{
   enableServerName = false;
   allowNewServer = false;
 
+  servers = ['TestServer'];
   serverCreationStatus = 'No server was created';
   serverName =  '';
   serverStatus1 = 'loading...';
@@ -30,6 +31,7 @@ export class CreateServerComponent{
 
 onCreateServer(){
   this.enableServerName = true;
+  this.servers.push(this.serverName);
   this.serverCreationStatus = 'Server successfully created, name is ' + this.serverName;
 }
 onUpdateServerName(event: any){

@@ -9,6 +9,9 @@ import { BigTextComponent } from './big-text/big-text.component';
 import { AnotherComponentComponent } from './another-component/another-component.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { CreateServerComponent } from './create-server/create-server.component';
+import { Assignment3Component } from './assignment3/assignment3.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CreateServerComponent } from './create-server/create-server.component';
     BigTextComponent,
     AnotherComponentComponent,
     Assignment2Component,
-    CreateServerComponent
+    CreateServerComponent,
+    Assignment3Component,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
